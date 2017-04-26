@@ -7,7 +7,7 @@
   <parent>
     <groupId>org.jooby</groupId>
     <artifactId>jooby-project</artifactId>
-    <version>1.1.0</version>
+    <version>1.1.1-SNAPSHOT</version>
   </parent>
 
   <artifactId>ebean-starter</artifactId>
@@ -17,7 +17,7 @@
   <name>ebean-starter</name>
 
   <properties>
-    <jooby.version>1.1.0</jooby.version>
+    <jooby.version>1.1.1-SNAPSHOT</jooby.version>
 
     <!-- Startup class -->
     <application.class>starter.ebean.App</application.class>
@@ -53,6 +53,12 @@
       <version>10.1.2</version>
       <scope>provided</scope>
     </dependency>
+    <dependency>
+      <groupId>org.avaje</groupId>
+      <artifactId>avaje-agentloader</artifactId>
+      <scope>runtime</scope>
+    </dependency>
+
 
     <dependency>
       <groupId>com.h2database</groupId>
@@ -95,6 +101,7 @@
         </executions>
       </plugin>
 
+<!--
       <plugin>
         <groupId>io.repaint.maven</groupId>
         <artifactId>tiles-maven-plugin</artifactId>
@@ -107,6 +114,7 @@
           </tiles>
         </configuration>
       </plugin>
+-->
 
       <!-- Build fat jar -->
       <plugin>
